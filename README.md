@@ -83,3 +83,8 @@ A **ARIA - Acessible Ritch Internet Application** é um recurso que utiliza a es
 Crawlers como o *GoogleBot* entram no site e buscam informações para serem indexadas, o HTML semântico facilita o reconhecimento dessas informações.
 
 *Web Scraping* é a ação de um indexador entrar num site extrair uma informações e gravar num arquivo ou banco de dados.
+
+## main, header e footer
+
+A tag *main* não pode ser filha de nenhuma outra a não ser o *body* ou de uma *div*, pois ela é o suporte do conteúdo principal da página. 
+Só pode existir um único elemento *main* por página; porém ele pode suportar os demais elementos como filhos.
