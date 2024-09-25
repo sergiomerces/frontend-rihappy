@@ -75,3 +75,11 @@ O atributo *alt* na tag **img** é lida por leitores de tela quando a página é
     </html>
 
 A **ARIA - Acessible Ritch Internet Application** é um recurso que utiliza a estrutura *DOM - Document Object Model* da página. A ARIA não muda a característica da tag, mas da ávore DOM a partir de atributos.
+
+## Web Scraping
+
+*Crawler* (rastreador) é conhecido como robô, indexador, é um termo genérico para qualquer aplicação para descobrir e examinar sites automaticamente seguindo links entre páginas web.
+
+Crawlers como o *GoogleBot* entram no site e buscam informações para serem indexadas, o HTML semântico facilita o reconhecimento dessas informações.
+
+*Web Scraping* é a ação de um indexador entrar num site extrair uma informações e gravar num arquivo ou banco de dados.
