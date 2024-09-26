@@ -96,3 +96,13 @@ O elemento *section* é a demarcação de um conteúdo independente que vai apar
 O elemento *aside* é um conteúdo que não tem relacão direta com o conteúdo principal.
 
 O elemento *section* deve ser usado quando for relevante seu aparecimento destacado na estrutura do documento, se for apenas como suporte de formatação o correto seria usar *div*.
+
+## article, bloquote e q
+
+O elemento *article* permite aninhamento interno e isso cria a ideia semântica de que um conteúdo filho esteja relacionado ao pai.
+
+Um recurso interessante para tornar mais semântico por exemplo datas é usar a tag *time* dentro *article*.
+
+O elemento *blockquote* é usado para citações longas, o atributo *cite* serve para informar a relação entre o artigo em que se está trabalhando e outra fonte na Web.
+
+O elemento *q* é usado para citações curtas, acrecentando aspas, porém não suporta múltiplos parágrafos.
