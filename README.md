@@ -88,3 +88,11 @@ Crawlers como o *GoogleBot* entram no site e buscam informações para serem ind
 
 A tag *main* não pode ser filha de nenhuma outra a não ser o *body* ou de uma *div*, pois ela é o suporte do conteúdo principal da página. 
 Só pode existir um único elemento *main* por página; porém ele pode suportar os demais elementos como filhos.
+
+## section, aside e nav
+
+O elemento *section* é a demarcação de um conteúdo independente que vai aparecer na pesquisa depois de indexado pelo crawler.
+
+O elemento *aside* é um conteúdo que não tem relacão direta com o conteúdo principal.
+
+O elemento *section* deve ser usado quando for relevante seu aparecimento destacado na estrutura do documento, se for apenas como suporte de formatação o correto seria usar *div*.
