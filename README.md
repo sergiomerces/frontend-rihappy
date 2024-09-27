@@ -106,3 +106,19 @@ Um recurso interessante para tornar mais semântico por exemplo datas é usar a 
 O elemento *blockquote* é usado para citações longas, o atributo *cite* serve para informar a relação entre o artigo em que se está trabalhando e outra fonte na Web.
 
 O elemento *q* é usado para citações curtas, acrecentando aspas, porém não suporta múltiplos parágrafos.
+
+## figure, figcaption e picture
+
+O elemento *figure* é um contâiner para delimitação de imagens e ilustrações, o *figcaption* cria uma legenda relaciona a imagem.
+
+O elemento *picture* com auxílio da tag *source* cria imagens responsivas que se ajustam à tela de acordo com a largura.
+
+    <picture>
+        <source srcset="./optimus-truck-p.png" media="(max-width:300px)">
+        <source srcset="./optimus-truck-p.png" media="(max-width:600px)">
+        <img src="./optimus-truck.png" alt="">
+    </picture>
+
+## SEO - Search Engine Opmization
+
+Trata-se da otimização do conteúdo para que seja mais relevante para indexação dos buscadores.,
