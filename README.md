@@ -3,6 +3,7 @@
 # Bootcamp Ri Happy Frontend do Zero
 Repositório de notas, atividades e projetos do bootcamp de Frontend Web Developer com JavaScript oferecidos pela DIO e Ri Happpy
 
+
 ## HTML semântico
 
 Como uma melhor prática de escrita de código, o HTML5 trouxe como uma evolução a substituição de *tags* genéricas como **div** por outras que dão melhor sentido ao código, como a introdução das *tags*:
@@ -121,4 +122,11 @@ O elemento *picture* com auxílio da tag *source* cria imagens responsivas que s
 
 ## SEO - Search Engine Opmization
 
-Trata-se da otimização do conteúdo para que seja mais relevante para indexação dos buscadores.,
+Trata-se da otimização do conteúdo para que seja mais relevante para indexação dos buscadores.
+
+---
+
+## Formulários
+
+Formulaŕio é um trecho de uma página HTML onde o usuário pode inserir informação.
+Essa informação do lado do cliente é enviada ao servidor através da internet, o servidor pode ou não gravar essa informação no banco de dados.
