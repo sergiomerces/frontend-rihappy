@@ -154,3 +154,25 @@ No *PHP*:
 
 Ao adicionarmos a propriedade *disabled* num *checkbox* ele não poderá mais ser marcado, permanecerá desabilitado.
 
+## buttons
+
+Temos trŝ tipos:
+
+* *button* - apenas um elemento clicável que só realiza uma ação se houver um script
+
+* *submit* - envia o formulário para o servidor
+
+* *reset* - limpa os dados do formulário
+
+        <main>
+            <form name="signup" method="get" autcomplete="on" action="#" target="_blank" onsubmit="alert('Enviado!');">
+                Nome: <input type="text" name="name" id="name"><br>
+                Idade: <input type="number" name="age" id="age"><br>
+                Senha: <input type="password" name="password" id="password"><br>
+                <button type="button" onclick="alert('Enviado!');">Button</button>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </main>
+
+

@@ -4,13 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Cadastro</title>
+    <style>
+        main {
+            background-color: rgb(73, 13, 129);
+            color: white;
+            font: normal 16px Arial;
+            margin: 20px 20px;
+            border-radius: 25px;
+        }
+
+        form {
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        form > label {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        form > input {
+            margin: 15px 10px;
+            font: normal 16px Arial;
+        }
+
+        button {
+            font: normal 16px Arial;
+            border-radius: 10px;
+        }
+
+
+
+    </style>
 </head>
 <body>
-    <form name="signup" method="POST" autcomplete="off" action="#" target="_blank" onsubmit="alert('Enviado!');">
-        Nome: <input type="text" name="name" id="name"><br>
-        Idade: <input type="number" name="age" id="age"><br>
-        Senha: <input type="password" name="password" id="password"><br>
-        <button type="submit">Enviar</button>
-    </form>
+    <main>
+        <form name="signup" method="get" autcomplete="on" action="#" target="_blank" onsubmit="alert('Enviado!');">
+            Nome: <input type="text" name="name" id="name"><br>
+            Idade: <input type="number" name="age" id="age"><br>
+            Senha: <input type="password" name="password" id="password"><br>
+            <button type="button" onclick="alert('Enviado!');">Button</button>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
 </body>
 </html>
