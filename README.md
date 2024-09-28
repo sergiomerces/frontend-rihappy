@@ -130,3 +130,27 @@ Trata-se da otimização do conteúdo para que seja mais relevante para indexaç
 
 Formulaŕio é um trecho de uma página HTML onde o usuário pode inserir informação.
 Essa informação do lado do cliente é enviada ao servidor através da internet, o servidor pode ou não gravar essa informação no banco de dados.
+
+Principais elementos:
+
+* label
+* input (text, number, button, tel, email, url, date, radio, checkbox, password, file, search)
+* button
+
+## checkbox e radio
+
+O *checkbox* é uma caixa de seleção que permite marcarmos múltiplos valores (*values*). Uma inportante dica é que o seu atributo *name* deve ser escrito acompanhado de colchetes, assim quendo o formulário for recebido no servidor o *PHP* o campo será entendido como um *array*:
+
+    <h3>Você selecionou: Pizza de Calabreza</h3>
+    <p>Quais opcionais você deseja?</p>
+    <input type="checkbox" name="opcional[]" value="queijo"> + queijo<br>
+    <input type="checkbox" name="opcional[]" value="calabresa"> + calabreza<br>
+    <input type="checkbox" name="opcional[]" value="cebola"> + cebola<br>
+    <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona<br>
+
+No *PHP*:
+
+    ?opcional["queijo", "cebola", "azeitona"]
+
+Ao adicionarmos a propriedade *disabled* num *checkbox* ele não poderá mais ser marcado, permanecerá desabilitado.
+
