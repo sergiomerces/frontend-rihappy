@@ -199,3 +199,11 @@ O *select* é uma lista com valores já predefinidos para que o usuário escolha
     </form>
 
 A propriedade *selected* carrega o formulário com essa opção já escolhida como padrão. Emobra não seja usual a propriedade *multiple* permite a seleção de mais de um valor.
+
+## textarea
+
+Um campo para digitação de texto longo, por padrão ele é redimensionável, mas pode ser travado com os atributos *rows* e *cols* para definir o número de linhas e colunas.
+
+    <label>Mensagem: </label><br>
+    <textarea rows="10" cols="80" name="message"></textarea><br>
+    <button type="submit">Enviar</button>
