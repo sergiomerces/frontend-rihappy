@@ -87,6 +87,49 @@ Um campo para digitação de texto longo, por padrão ele é redimensionável, m
     <textarea rows="10" cols="80" name="message"></textarea><br>
     <button type="submit">Enviar</button>
 
+## fieldset e legend
+
+O *fieldset* funciona como um agrgador de campos de formulário, criando uma borda de delimitação e o *legend* funciona como um rótulo dessa seção.
+
+    <form>
+        <h1>Formulário de Cadastro</h1>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label>Nome: </label><input type="text" name="name"><br>
+                <label>Profissão: </label><input type="text" name="job">
+            </div>
+            <div>
+                <label>E-mail: </label><input type="email" name="email"><br>
+                <label>Empresa: </label><input type="text" name="company">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <div>
+                <label>Logradouro: </label><input type="text" name="street"><br>
+                <label>Bairro: </label><input type="text" name="region">
+            </div>
+            <div>
+                <label>Número: </label><input type="number" name="number" min="1" max="99999"><br>
+                <label>Cidade/UF: </label><input type="text" name="city">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contato</legend>
+            <div>
+                <label>Celular: </label><input type="tel" name="phone"><br>
+                <label>LinkedIn: </label><input type="url" name="linkedin">
+            </div>
+            <div>
+                <label>WhatsApp: </label><input type="tel" name="whatsapp"><br>
+                <label>Github: </label><input type="url" name="github">
+            </div>
+        </fieldset>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar formulário</button>
+    </form>
+
 ---
 
 ## HTML + Formatações
