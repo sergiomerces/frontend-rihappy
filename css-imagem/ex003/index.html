@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redimensionando imagens de fundo</title>
+    <style>
+        div {
+            margin-bottom: 30px;
+        }
+
+        .exemplo {
+            width: 300px;
+            height: 300px;
+            background-image: url('./super-mario-wonder.jpg');
+        }
+
+        #auto {
+            background-size: auto;
+        }
+
+        #cover {
+            background-size: cover;
+        }
+
+        #contain {
+            background-size: contain;
+        }
+
+        #valor-x {
+            background-size: 250px;
+        }
+
+        #valor-xy {
+            background-size: 50% 100%;
+        }
+
+        #camada {
+            width: 300px;
+            height: 300px;
+            background-image: url('./turbo.png'), url('./super-mario-wonder.jpg');
+            background-size: contain, cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Redimensionando imagens de fundo</h1>
+    <div class="exemplo" id="auto">
+        <code>background-size: auto;</code>
+    </div>
+    <div class="exemplo" id="cover">
+        <code>background-size: cover;</code>
+    </div>
+    <div class="exemplo" id="contain">
+        <code>background-size: contain;</code>
+    </div>
+    <div class="exemplo" id="valor-x">
+        <code>background-size: 250px;</code>
+    </div>
+    <div class="exemplo" id="valor-xy">
+        <code>background-size: 250px;</code>
+    </div>
+    <div id="camada">
+        <code>background-size: camada1, camada2;</code>
+    </div>
+</body>
+</html>

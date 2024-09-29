@@ -449,3 +449,5 @@ Aplicando gradiente:
         background-color: palevioletred;
         background-image: linear-gradient(lightpink, palevioletred, purple);
     }
+
+Alterando o tamanho de uma imagem de fundo
