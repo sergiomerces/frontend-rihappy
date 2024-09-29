@@ -283,3 +283,71 @@ O elemento *picture* com auxílio da tag *source* cria imagens responsivas que s
 ## SEO - Search Engine Opmization
 
 Trata-se da otimização do conteúdo para que seja mais relevante para indexação dos buscadores.
+
+---
+
+## CSS
+
+O *CSS - Cascading Style Sheets*, folha de estilos em cascata, é uma linguagem de estilos para adicionar estilos às páginas HTML. Determina como deve ser a página e os elementos. Criada em 1994.
+
+O CSS pode ser declarado:
+
+* inline - na própria linha do código HTML
+* embbed - embutido no *head* da página
+* link externo - um arquivo de estilo independente
+
+### Seletores
+
+**Universal**
+
+Especifica estilos que serão aplicados em todo o documento
+
+    * {
+        background: white;
+        font: normal 16px black;
+        margin: 0;
+        padding: 0;
+    }
+
+**Tag**
+
+Aplica o estilo a todos elementos do mesmo estilo
+
+    h1 {
+        color: blue;
+    }
+
+**Classe**
+
+Aplica o estilo a todos elementos que são da mesma classe, muito usual para personalizar vários elementos de uma vez.
+
+    .titulo {
+        font: normal 20px black;
+    }
+
+**ID**
+
+Aplica o estilo ao elemento com id específico. O id tem como particularidade não se repetir, ele é único.
+
+    #titulo {
+        font: normal 20px black;
+    }
+
+**Atributo**
+
+    [title] {
+        color: red;
+    }
+
+Podemos aplicar o estilo para um elemento com a ocorrência de um atributo de valor específico
+
+    [title="disney"] {
+        color: red;
+    }
+---
+
+## Sombras
+
+### drop-shadow
+
+    filter: drop-shadow(10px 10px 10px gray);
