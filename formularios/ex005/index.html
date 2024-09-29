@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        form,
+        button {
+            font: normal 16px Arial;
+        }
+
+        button {
+            margin-left: 15px;
+            line-height: 16px;
+        }
+
+        fieldset {
+            display: flex;
+            margin: 10px;
+            border: solid 1px gray;
+            border-radius: 20px;
+            box-shadow: 0.3px 0.3px 0.3px gray;
+        }
+
+        div {
+            margin-left: 20px;
+            text-align: right;
+        }
+
+        label, 
+        input {
+            margin: 10px;
+        }
+
+        label {
+            width: 100px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Formulário de Cadastro</h1>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label>Nome: </label><input type="text" name="name"><br>
+                <label>Profissão: </label><input type="text" name="job">
+            </div>
+            <div>
+                <label>E-mail: </label><input type="email" name="email"><br>
+                <label>Empresa: </label><input type="text" name="company">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <div>
+                <label>Logradouro: </label><input type="text" name="street"><br>
+                <label>Bairro: </label><input type="text" name="region">
+            </div>
+            <div>
+                <label>Número: </label><input type="number" name="number" min="1" max="99999"><br>
+                <label>Cidade/UF: </label><input type="text" name="city">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contato</legend>
+            <div>
+                <label>Celular: </label><input type="tel" name="phone"><br>
+                <label>LinkedIn: </label><input type="url" name="linkedin">
+            </div>
+            <div>
+                <label>WhatsApp: </label><input type="tel" name="whatsapp"><br>
+                <label>Github: </label><input type="url" name="github">
+            </div>
+        </fieldset>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar formulário</button>
+    </form>
+</body>
+</html>
