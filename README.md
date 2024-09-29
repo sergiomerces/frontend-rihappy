@@ -156,7 +156,7 @@ Ao adicionarmos a propriedade *disabled* num *checkbox* ele não poderá mais se
 
 ## buttons
 
-Temos trŝ tipos:
+Temos três tipos:
 
 * *button* - apenas um elemento clicável que só realiza uma ação se houver um script
 
@@ -175,4 +175,27 @@ Temos trŝ tipos:
             </form>
         </main>
 
+A propriedade *disable* também pode ser usada para desabilitar *inputs*
 
+## select e seus tipos
+
+O *select* é uma lista com valores já predefinidos para que o usuário escolha.
+
+    <form action="#">
+        <label>Nome: </label><input type="text" name="name"><br>
+        <label>Cargo: </label>
+        <select name="role">
+            <option value="">Selecione o cargo</option>
+            <option value="estagiario">estagiário</option>
+            <option value="agente administrativo">agente administrativo</option>
+            <option value="agente administrativo e financeiro" selected>agente administrativo e financeiro</option>
+            <option value="coordenador de seção">coordenador de seção</option>
+            <option value="coordenador de divisão">coordenador de divisão</option>
+            <option value="coordenador de departamento">coordenador de departamento</option>
+        </select>
+        <br>
+        <label>Assunto: </label><input type="text" name="subject"><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+A propriedade *selected* carrega o formulário com essa opção já escolhida como padrão. Emobra não seja usual a propriedade *multiple* permite a seleção de mais de um valor.
