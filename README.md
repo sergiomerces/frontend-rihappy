@@ -451,3 +451,38 @@ Aplicando gradiente:
     }
 
 Alterando o tamanho de uma imagem de fundo
+
+    #contain {
+        background-size: contain;
+    }
+
+    #valor-x {
+        background-size: 250px;
+    }
+
+    #valor-xy {
+        background-size: 50% 100%;
+    }
+
+    #camada {
+        width: 300px;
+        height: 300px;
+        background-image: url('./turbo.png'), url('./super-mario-wonder.jpg');
+        background-size: contain, cover;
+    }
+
+Posicionando uma imagem de fundo
+
+    div {
+        margin-bottom: 30px;
+    }
+
+    .exemplo {
+        width: 300px;
+        height: 300px;
+        background-image: url('./yoshi.png');
+        background-size: 120px;
+        border: 1px solid red;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
