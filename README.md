@@ -351,3 +351,48 @@ Podemos aplicar o estilo para um elemento com a ocorrência de um atributo de va
 ### drop-shadow
 
     filter: drop-shadow(10px 10px 10px gray);
+
+## Background
+
+Alterando o fundo de uma elemento:
+
+HTML
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alterando o fundo dos elementos</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div></div>
+    </body>
+    </html>
+
+CSS
+
+    @charset "UTF-8";
+
+    div {
+        width: 300px;
+        height: 300px;
+        background-color: palevioletred;
+    }
+
+Adicionando uma imagem ao background:
+
+    div {
+        width: 300px;
+        height: 300px;
+        background-color: palevioletred;
+        background-image: url('../img/gatinho.png');
+    }
+
+Aplicando gradiente:
+
+    div#gradiente {
+        background-color: palevioletred;
+        background-image: linear-gradient(lightpink, palevioletred, purple);
+    }
