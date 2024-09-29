@@ -352,6 +352,45 @@ Podemos aplicar o estilo para um elemento com a ocorrência de um atributo de va
 
     filter: drop-shadow(10px 10px 10px gray);
 
+## Imagem
+
+A propriedade *object-fit* vai definir como uma imagem ou video será renderizado dentro de um container, se manterá as proporções ou será distorcido para preencher todo o espaço.
+
+O *object-fit* pode assumir os valores:
+
+* fill - é o padrão, mesmo que não o definamos, distorce imagens maiores para ajustarem ao container
+
+* contain - reduz imagens maiores mantendo a proporção sem distorcer a imagem, sem ocupar todo container
+
+* cover - ele ajusta a imagem no container sem distorções, as cobre todo o container
+
+* none - ignora totalmente qualquer ajuste 
+
+* scale-down - escolhe entre contain e none qual é a menor para exibir
+
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #contain {
+            object-fit: contain;
+        }
+
+        #cover {
+            object-fit: cover;
+        }
+
+        #none {
+            object-fit: none;
+        }
+
 ## Background
 
 Alterando o fundo de uma elemento:
