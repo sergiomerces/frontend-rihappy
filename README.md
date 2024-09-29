@@ -354,6 +354,8 @@ Podemos aplicar o estilo para um elemento com a ocorrência de um atributo de va
 
 ## Imagem
 
+### object-fit
+
 A propriedade *object-fit* vai definir como uma imagem ou video será renderizado dentro de um container, se manterá as proporções ou será distorcido para preencher todo o espaço.
 
 O *object-fit* pode assumir os valores:
@@ -390,6 +392,18 @@ O *object-fit* pode assumir os valores:
         #none {
             object-fit: none;
         }
+
+### object-position
+
+A propriedade *object-position* mostra partes de uma imagem grande para o container de acordo com as  coordenadas dos eixos x (left, center, right), y (top, center, bottom) também são aceitos start e end.
+
+    img {
+            width: 100%;
+            height: 100%;
+            object-fit: none;
+            object-position: left center;
+        }
+
 
 ## Background
 
